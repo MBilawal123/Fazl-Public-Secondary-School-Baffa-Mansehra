@@ -1,0 +1,157 @@
+<DOCTYPE html>
+<html lang="en">
+<title>
+</title>
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+</head>
+<header>
+<div class="tasmia">
+	<div class="bismillah">    بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ </div>
+ </div>
+
+<div class="header-grid">
+	<div class="left">
+	<h1 class="english-name"> FAZL PUBLIC SECONDARY SCHOOL<br><span style="margin-left:2.9cm;"> BAFFA MANSEHRA</span> </h1>
+	</div>
+	<div class="center">
+	<img src="Images/Logo.png" alt="School Logo" class="logo" />
+	</div>
+	<div class="right">
+	<h1 class="urdu-name">فضل پبلک سکینڈری سکول بفہ مانسہرہ</h1>
+	</div>
+</div>
+</header>
+<body>
+<div class="nav-tab">
+<ul class="list">
+	   <li><a href="index.html">Home</a></li>  
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="courses.html">Courses</a></li>
+    
+   <li class="active"><a href="department.html">Departments</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="facilities.html">Facilities</a></li>
+	
+</ul>
+</div>
+<!.... Side bar .... >
+<div class="main-contianer">
+	<div class="sidebar">
+		<button class="tab-btn active" onclick="openTab('principal')">Principal </button>
+		<button class="tab-btn" onclick="openTab('viceprincipal')">Vice Prinicipal </button>
+		<button class="tab-btn" onclick="openTab('Accountant')">Accountant </button>
+		<button class="tab-btn" onclick="openTab('controller-of-examination')">Controllers Of Examination  </button>
+		
+		
+	
+	</div>
+<!.... contenct Area....>
+<!.... Principal....>
+	<div class="department-content">
+		<div id ="principal" class="tab-content active" >
+			<div class="card">
+				<div class="card-header">
+				<img src="Images/fazl.jpg" alt="Principal Photo">
+				</div>
+				<h2> Fazl E haq </h2>
+				<p class="designation"> Principal </p>
+				<p class="qualification"> M.A (political Science), B.ed </p>
+				<p class="Phone-number"> Ph:0316-9250121 </p>
+			</div>
+		</div>
+	<!....Vice Principal......>
+		<div id ="viceprincipal" class="tab-content" >
+			<div class="card">
+				<div class="card-header">
+				<img src="Images/principal2.jpg" alt="Principal Photo">
+				</div>
+				<h2> Shams ul Haq </h2>
+				<p class="designation"> Vice Principal </p>
+				<p class="qualification"> M.A (political Science), B.ed </p>
+				<p class="Phone-number"> Ph:0316-5896123 </p>
+			</div>
+		</div>
+	<!..... Accountant ......>
+		<div id ="Accountant" class="tab-content" >
+			<div class="card">
+				<div class="card-header">
+				<img src="Images/fazl.jpg" alt="Principal Photo">
+				</div>
+				<h2> Ikram ul Haq </h2>
+				<p class="designation"> Accountant </p>
+				<p class="qualification"> M.A (political Science), B.ed </p>
+				<p class="Phone-number"> Ph:0316-5896123 </p>
+			</div>
+			<div class="card">
+				<div class="card-header">
+				<img src="Images/principal2.jpg" alt="Principal Photo">
+				</div>
+				<h2> Ahsan  </h2>
+				<p class="designation"> Accountant </p>
+				<p class="qualification"> M.A (political Science), B.ed </p>
+				<p class="Phone-number"> Ph:0316-5896123 </p>
+			</div>
+			
+		</div>
+	<!....... Controller of Examination .......>
+		<div id ="controller-of-examination" class="tab-content">
+			<div class="card">
+				<div class="card-header">
+				<img src="Images/fazl.jpg" alt="Principal Photo">
+				</div>
+				<h2> Muhammad Bilawal </h2>
+				<p class="designation"> Controller of Examination </p>
+				<p class="qualification"> M.A (political Science), B.ed </p>
+				<p class="Phone-number"> Ph:0316-5896123 </p>
+			</div>
+			<div class="card">
+				<div class="card-header">
+				<img src="Images/fazl.jpg" alt="Principal Photo">
+				</div>
+				<h2> Muhammad Ajmal </h2>
+				<p class="designation"> Controller of Examination </p>
+				<p class="qualification"> M.A (political Science), B.ed </p>
+				<p class="Phone-number"> Ph:0316-5896123 </p>
+			</div>
+			<div class="card">
+				<div class="card-header">
+				<img src="Images/fazl.jpg" alt="Principal Photo">
+				</div>
+				<h2> Muhammad Afnan </h2>
+				<p class="designation"> Controller of Examination </p>
+				<p class="qualification"> M.A (political Science), B.ed </p>
+				<p class="Phone-number"> Ph:0316-5896123 </p>
+			</div>
+			
+			
+		</div>
+	
+	
+		
+		
+		
+		
+	
+	</div>
+</div>
+
+</body>
+<script>
+function openTab(tabId) {
+// Hide all content
+document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+// Remove active class form all buttons 
+document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+// show selected content
+document.getElementById(tabId).classList.add('active');
+// higlight the active button
+event.currentTarget.classList.add('active');
+
+
+}
+</script>
+</html>

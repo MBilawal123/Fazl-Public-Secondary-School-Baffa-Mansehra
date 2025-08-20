@@ -1,0 +1,163 @@
+<DOCTYPE html>
+<html lang="en">
+<title> Fazl Public Secondary School Baffa</title>
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="style.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<header>
+ <div class="tasmia">
+	<div class="bismillah">    بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ </div>
+ </div>
+
+<div class="header-grid">
+	<div class="left">
+	<h1 class="english-name"> FAZL PUBLIC SECONDARY SCHOOL<br><span style="margin-left:2.9cm;"> BAFFA MANSEHRA</span> </h1>
+	</div>
+	<div class="center">
+	<img src="Images/Logo.png" alt="School Logo" class="logo" />
+	</div>
+	<div class="right">
+	<h1 class="urdu-name">فضل پبلک سکینڈری سکول بفہ مانسہرہ</h1>
+	</div>
+</div>
+</header>
+<body>
+<div class="nav-tab">
+<ul class="list">
+	   <li class="active"><a href="index.html">Home</a></li>
+    <li ><a href="about.html">About Us</a></li>
+    <li><a href="courses.html">Courses</a></li>
+  
+	<li><a href="department.html">Departments</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="facilities.html">Facilities</a></li>	
+</ul>
+</div>
+<div class="slideshow-container">
+	<div class="slide fade">
+	<img src="Images/pic1.jpg" alt="Picture 1">
+	</div>
+	<div class="slide fade">
+	<img src="Images/pic2.jpg" alt="Picture 2">
+	</div>
+	<div class="slide fade">
+	<img src="Images/pic3.jpg" alt="Picture 3">
+	</div>
+</div>
+
+ 
+<div class="message-contianer">
+	<div class="principal-message">
+	<h1 class="p-message">Principal Message </h1>
+	<img class="principal-photo" src="Images/Principal.jpg">
+	<p class="principal-para"> As we continue to embark on our educational journey, it is important to remember that each step we take is a step toward growth, learning, and creating a brighter future. In this school, we believe in the power of knowledge, curiosity, and collaboration. Whether you are a student striving for excellence or a community member supporting our mission, your role is vital to the success of our shared goals.
+
+To our students: Every challenge you face is an opportunity for growth. Embrace each lesson, be curious, and never stop asking questions. Your education is not just about academics, but also about developing the values, skills, and mindset that will help you become leaders and compassionate individuals in the world. </p>
+	</div>
+	<div class="upcoming-events">	
+	<h1 class="up-events"> Upcoming-Events </h1>
+		<div class="scroll-area">
+			<div class="event-list">
+			<!Event-1..........>
+			<a href="Images/result.png" class="event" target="_blank">
+			<div class="event-date">
+			<div class="day"> 18 </div>
+			<div class="month"> March </div>
+			</div>
+			<div class="event-content">
+			<h3>Annual Examination </h3>
+			</div>
+			</a>
+			<!Event .....2 >
+			<a href="Images/result.png" class="event" target="_blank">
+			<div class="event-date">
+			<div class="day"> 25 </div>
+			<div class="month"> March </div>
+			</div>
+			<div class="event-content">
+			<h3>Teacher -parent metting (PTM) </h3>
+			</div>
+			</a>
+			
+			
+			
+			
+			</div>
+		</div>
+	
+	</div>
+	<div class="vice-principal-message">
+	<h1 class="Vp-message"> Vice Principal Message </h1>
+	<img class="vp-photo" src="Images/Principal2.jpg">
+	<p class="vp-para">At Fazl Public Secondary School, we are committed to nurturing young minds through quality education, moral values, and a supportive learning environment. </p>
+	</div>
+
+</div>
+
+
+
+
+
+
+  
+</body>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  const slides = document.getElementsByClassName("slide");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) { slideIndex = 1; }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 3000);
+}
+
+
+
+
+</script>
+<footer class="footer">
+    <!-- Logo Column -->
+    <div class="footer-column school-info">
+        <img src="Images/logo.png" alt="Hazara University Logo">
+		<h1> FAZL PUBLIC SECONDARY SCHOOL BAFFA MANSEHRA </H1>
+    </div>
+
+    <!-- Contact Column -->
+    <div class="footer-column">
+        <h3>FAZL PUBLIC SECONDARY SCHOOL BAFFA MANSEHRA</h3>
+        <p>📍 Baffa Mansehra, KPK Pakistan</p>
+         <p><i class="fas fa-phone"></i> 0997-388511</p>
+        <div class="social-icons">
+            <i class="fab fa-whatsapp"></i> 0311-9816221<br><br>
+			<i class="fas fa-mobile-alt"></i> 0316-9250121<br><br>
+        <a href="https://web.facebook.com/search/top?q=fazl%20public%20secondary%20school%20baffa%20-%20mansehra" target="_blank" class="social-link">
+     <i class="fab fa-facebook"></i> Facebook
+    </a>
+        </div>
+		
+    
+    
+  
+        <small>© 2025 Fazl Public Secondary School Baffa. All rights reserved.</small>
+    </div>
+
+    <!-- Contact Form Column -->
+    <div class="footer-column">
+        <h3>Contact Us</h3>
+        <form action="sendmail.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="3" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</footer>
+</html>
+ 
